@@ -4,12 +4,18 @@ import Portfolio from './components/portfolio/Portfolio';
 import Work from './components/work/Work';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
+import Menu from './components/menu/Menu';
 import './app.scss'
+import { useState } from 'react';
 
 function App() {
+
+  const [menuOpen,setMenuOpen] = useState(true)
+
   return (
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro/>
         <Portfolio/>

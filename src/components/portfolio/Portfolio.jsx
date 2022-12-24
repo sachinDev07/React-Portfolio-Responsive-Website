@@ -1,4 +1,3 @@
-import { ListItem } from '@mui/material';
 import React, { useState } from 'react'
 import PortfolioList from '../portfolioList/PortfolioList';
 import './portfolio.scss'

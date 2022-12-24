@@ -8,6 +8,7 @@
 
     h1{
         font-size: 50px;
+        margin-bottom: 1rem;
     }
 
     ul{
@@ -15,6 +16,8 @@
         padding: 0;
         list-style: none;
         display: flex;
+        margin-bottom: 1.5rem;
+
     }
 
     .container{
@@ -25,7 +28,7 @@
         flex-wrap: wrap;
 
         .item{
-            width: 220px;
+            width: 250px;
             height: 150px;
             border-radius: 20px;
             border: 1px solid red($color: #ebeaea);
